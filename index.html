@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f7f2" />
+    <meta name="description" content="Ran Jin · Westlake University。记录想法、学习与创作的个人空间。" />
+    <title>Ran Jin — 个人空间</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Ran Jin，回到首页"><span class="brand-symbol" aria-hidden="true">r.</span><span data-profile="name">Ran Jin</span><span class="brand-dot" aria-hidden="true">✳</span></a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="打开导航"><span></span><span></span></button>
+        <nav id="navigation" aria-label="主要导航">
+          <a href="#home" class="nav-home">首页</a><a href="#about">关于我</a><a href="#projects">作品</a>
+          <a href="#contact" class="nav-contact">聊一聊 <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section id="home" class="hero container" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="eyebrow welcome"><span class="status-dot" aria-hidden="true"></span><span data-profile="affiliation">Westlake University · 西湖大学</span></p>
+          <p class="hello">你好，我是 <span data-profile="name">Ran Jin</span><span class="hello-star" aria-hidden="true">✳</span></p>
+          <h1 id="hero-heading">保持好奇，<br />把<span class="accent-word">想法<span class="underline" aria-hidden="true"></span></span>变成作品。</h1>
+          <p class="hero-description" data-profile="intro">欢迎来到我的个人空间。<br />在这里，分享学习的足迹、探索中的想法与创作。</p>
+          <div class="hero-actions"><a class="button button-dark" href="#projects">探索我的作品 <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">认识我 <span aria-hidden="true">→</span></a></div>
+          <div class="hero-note"><span class="note-line" aria-hidden="true"></span><span>一点学习 · 一点创作 · 一点生活</span></div>
+        </div>
+        <div class="hero-art">
+          <div class="art-caption"><span>THE CURIOUS CORNER</span><span>VOL. 01 / 2026</span></div>
+          <img class="main-art" src="/artwork.svg" width="560" height="530" alt="暖橙太阳、绿色植物与几何拱门组成的抽象花园插画" fetchpriority="high" />
+          <div class="art-bottom"><span class="art-flower" aria-hidden="true">✳</span><p>慢慢生长，<br /><strong>也慢慢发光。</strong></p><span class="art-index">01 — ∞</span></div>
+          <div class="art-sticker" aria-hidden="true">MADE WITH<br /><span>curiosity</span><svg viewBox="0 0 32 32"><path d="M16 5v22M5 16h22M8 8l16 16M8 24 24 8" /></svg></div>
+        </div>
+      </section>
+      <div class="interlude"><div class="container"><span>LEARN.</span><span aria-hidden="true">✳</span><span>CREATE.</span><span aria-hidden="true">✳</span><span>SHARE.</span><span class="interlude-note">让每一个小想法，都有落地的地方。</span></div></div>
+      <section id="about" class="section container about-section" aria-labelledby="about-heading">
+        <div class="section-title"><p class="eyebrow">01 / ABOUT ME</p><h2 id="about-heading">关于我<span class="title-dot">.</span></h2><p class="section-lead">认真生活，也认真探索。</p></div>
+        <div class="about-copy"><h3 data-profile="aboutHeading">喜欢发现，也喜欢创造。</h3><p data-profile="about">我喜欢把遇见的灵感记录下来，把感兴趣的事情动手试一试。这个网站是我的一小块数字花园，收集学习、创作，以及生活里值得记住的片刻。</p><p data-profile="aboutExtra">希望在不断尝试的过程中，把想法变得更清晰，也遇见同样好奇的你。</p><div class="interest-tags" id="interests" aria-label="兴趣"></div></div>
+        <div class="about-values"><article><span class="value-icon" aria-hidden="true">↗</span><div><h3>保持好奇</h3><p>多问一句为什么，多尝试一种可能。</p></div></article><article><span class="value-icon" aria-hidden="true">✳</span><div><h3>边学边做</h3><p>从一个小想法开始，在实践里成长。</p></div></article><article><span class="value-icon" aria-hidden="true">↔</span><div><h3>乐于分享</h3><p>让记录成为连接彼此的起点。</p></div></article></div>
+      </section>
+      <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+        <div class="container">
+          <div class="projects-header"><div class="section-title"><p class="eyebrow">02 / SELECTED WORK</p><h2 id="projects-heading">一些小小的创造<span class="title-dot">.</span></h2><p class="section-lead">从想法到实践，一步一步来。</p></div><div class="project-filters" role="group" aria-label="筛选作品"><button class="filter active" data-filter="all" aria-pressed="true">全部</button><button class="filter" data-filter="website" aria-pressed="false">网站</button><button class="filter" data-filter="notes" aria-pressed="false">记录</button><button class="filter" data-filter="creative" aria-pressed="false">创意</button></div></div>
+          <div class="project-grid" id="project-grid"></div>
+          <p class="projects-footnote"><span aria-hidden="true">→</span> 这里是持续更新的作品角落。概念示例展示未来的创作方向。</p>
+          <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+      <section id="contact" class="section container contact-section" aria-labelledby="contact-heading">
+        <div class="contact-card"><div><p class="eyebrow">03 / SAY HELLO</p><h2 id="contact-heading">一个好想法，<br />可以从一句<span>「你好」</span>开始。</h2><p data-profile="contactText">无论是交流想法、分享灵感，还是简单打个招呼，<br />都欢迎来找我聊聊。</p><div class="contact-actions"><a class="button button-cream" id="contact-link" href="https://github.com/jinran0210" target="_blank" rel="noopener noreferrer">在 GitHub 找到我 <span aria-hidden="true">↗</span></a><button class="copy-button" id="copy-link">复制主页链接 <span aria-hidden="true">⧉</span></button></div></div><div class="contact-art" aria-hidden="true"><svg viewBox="0 0 240 240"><path d="M120 20v200M20 120h200M49 49l142 142M49 191 191 49" /><path d="m81 28 78 184M28 81l184 78M28 159 184-78M81 212l78-184" /></svg><span>LET'S MAKE<br />SOMETHING GOOD.</span></div></div>
+      </section>
+    </main>
+    <footer class="site-footer container"><a class="brand footer-brand" href="#home"><span class="brand-symbol" aria-hidden="true">r.</span><span data-profile="name">Ran Jin</span></a><p>© <span id="year">2026</span> <span data-profile="name">Ran Jin</span> · 用好奇心创造</p><a class="back-top" href="#home">回到顶部 <span aria-hidden="true">↑</span></a></footer>
+    <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button class="dialog-close" aria-label="关闭作品详情">×</button><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><p id="dialog-description"></p><div id="dialog-tags" class="interest-tags"></div><p id="dialog-status"></p><a id="dialog-link" class="button button-dark"></a></div></dialog>
+    <dialog id="share-dialog" aria-labelledby="share-title"><div class="dialog-inner"><button class="dialog-close" aria-label="关闭分享窗口">×</button><p class="eyebrow">SHARE THIS SPACE</p><h2 id="share-title">分享这片小空间</h2><p>浏览器暂时无法自动复制。可以选中下方地址，手动复制分享。</p><label class="sr-only" for="share-url">主页地址</label><input id="share-url" type="url" readonly /></div></dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <noscript><p class="noscript-message">介绍和联系方式可直接浏览；作品筛选与详情需要开启 JavaScript。</p></noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

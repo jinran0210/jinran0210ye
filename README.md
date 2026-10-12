@@ -1,0 +1,79 @@
+# Ran Jin · Westlake University 个人网站
+
+一个中文个人网站，采用米白、深绿与暖橙配色，包含原创 SVG 插画、个人介绍、作品筛选与详情、GitHub 联系入口和主页链接分享。适配手机、平板和电脑；无需数据库、账号或 API 密钥。
+
+## 本地运行
+
+需要 Node.js 22.12 或更新版本（云环境已验证 Node.js 24）。
+
+```sh
+cd /workspace/jinran0210ye # 本地电脑请改为实际项目目录
+npm ci
+npm run dev
+```
+
+开发服务使用 5173 端口，支持修改后的自动更新。`.npmrc` 将 npm 缓存放在项目内的 `.npm-cache/`，适用于云环境，缓存不会提交到 Git。
+
+```sh
+npm run build
+npm run preview
+```
+
+构建产物在 `dist/`；预览服务使用 4173 端口。运行时只需要静态文件服务器。
+
+## 替换个人信息
+
+编辑 `src/profile.js`：
+
+- `name`、`affiliation`：姓名和学校信息。
+- `intro`、`about`、`aboutExtra`：个人介绍。
+- `interests`：兴趣标签。
+- `github`：GitHub 主页。
+- `email`：真实邮箱，留空时使用 GitHub；填写后联系按钮会发送邮件。
+- `projects`：作品数组。替换名称、分类、介绍与真实项目地址，也可以删除示例。
+
+当前姓名为 **Ran Jin**，学校为 **Westlake University · 西湖大学**。其余介绍为可编辑的初始文案，不包含虚构的学历、职位或研究成果。“日常里的小发现”和“灵感收集站”是明确标注、尚未发布的概念示例。
+
+页面的静态后备文案在 `index.html`，品牌图标在 `public/favicon.svg`，插画在 `public/artwork.svg`。更改个人姓名后，也可同步更新静态后备文案和图标。
+
+## 功能检查
+
+构建后，可以检查以下行为：
+
+1. 个人信息显示 Ran Jin / Westlake University。
+2. “网站”“记录”“创意”筛选分别显示对应作品，“全部”恢复三个作品。
+3. 点选作品可打开详情；关闭按钮和 Escape 可关闭，焦点返回原来的按钮。
+4. “在 GitHub 找到我”打开 GitHub；“复制主页链接”复制不带页内锚点的当前网址。剪贴板不可用时，弹窗提供可手动复制的地址。
+5. 手机端导航可以展开、收起，并跳转到对应页面区域。
+6. 键盘可以浏览链接和按钮；启用“减少动态效果”时取消滚动与过渡动画。
+
+## GitHub Pages 免费发布
+
+项目包含 `.github/workflows/deploy-pages.yml`。推送到 `main` 后，GitHub Actions 会安装依赖、构建静态网站并发布；也可以在 Actions 页面手动运行。
+
+首次发布需要在 GitHub 仓库中启用 Pages：
+
+1. 打开 `https://github.com/jinran0210/jinran0210ye/settings/pages`。
+2. 在 **Build and deployment → Source** 选择 **GitHub Actions**。
+3. 打开仓库的 **Actions** 页面，选择 **Deploy personal website to GitHub Pages**，点击 **Run workflow**，选择 `main`。
+4. 两个任务 **Build website** 和 **Publish website** 成功后，查看 Pages 设置中给出的网址。
+
+预期网址为 `https://jinran0210.github.io/jinran0210ye/`，需以 GitHub 的部署结果和实际访问为准。GitHub Free 的 Pages 需要公开仓库；如果仓库是私有的，请先检查账号方案和仓库设置，不要为了部署直接改动仓库可见性。
+
+发布构建命令：
+
+```sh
+npm run build:pages
+```
+
+这个命令会设置 `/jinran0210ye/` 子路径，确保插画、图标和脚本在 GitHub Pages 上正常加载。未来修改 `src/profile.js` 并推送到 `main`，会自动更新网站。工作流只使用 GitHub 提供的临时令牌，无需在代码或仓库 Secrets 中添加个人令牌。
+
+## 其他静态网站平台
+
+可将项目部署到支持静态网站的平台（例如 Cloudflare Pages、Netlify 或 Vercel）：
+
+- 构建命令：`npm run build`
+- 输出目录：`dist`
+- Node.js：22.12 或更新版本
+
+若使用独立域名或用户名根站点，使用默认构建即可。构建和本地验证本身不会发布到公网；GitHub Pages 工作流的成功结果才表示 GitHub 部署完成。

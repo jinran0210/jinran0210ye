@@ -1,0 +1,56 @@
+// 在这里替换你的名字、介绍、兴趣和联系方式。
+// email 留空时显示 GitHub；填入真实邮箱后会显示“发一封邮件”。
+export const profile = {
+  name: 'Ran Jin',
+  affiliation: 'Westlake University · 西湖大学',
+  intro: '欢迎来到我的个人空间。\n在这里，分享学习的足迹、探索中的想法与创作。',
+  aboutHeading: '喜欢发现，也喜欢创造。',
+  about: '我喜欢把遇见的灵感记录下来，把感兴趣的事情动手试一试。这个网站是我的一小块数字花园，收集学习、创作，以及生活里值得记住的片刻。',
+  aboutExtra: '希望在不断尝试的过程中，把想法变得更清晰，也遇见同样好奇的你。',
+  interests: ['网页创作', '学习记录', '生活灵感', '持续探索'],
+  contactText: '无论是交流想法、分享灵感，还是简单打个招呼，\n都欢迎来找我聊聊。',
+  github: 'https://github.com/jinran0210',
+  email: '',
+};
+
+// 后两个项目是明确标注的概念示例，可以替换或删除。
+// category 可用 website / notes / creative；url 可填真实项目地址。
+export const projects = [
+  {
+    id: 'personal-space',
+    title: '我的个人空间',
+    subtitle: '给想法、作品和生活留一个位置。',
+    category: 'website',
+    categoryLabel: '个人网站',
+    kind: 'garden',
+    tags: ['响应式设计', '个人主页'],
+    description: '你正在浏览的这个网站，就是我的第一个作品空间。它包含个人介绍、作品展示和联系入口，可以在电脑和手机上浏览。希望这片小小的数字花园，随着新的学习与创作慢慢生长。',
+    status: '当前网站',
+    url: '#home',
+    linkLabel: '回到网站首页',
+  },
+  {
+    id: 'little-notes',
+    title: '日常里的小发现',
+    subtitle: '记录值得记住的、微小而美好的瞬间。',
+    category: 'notes',
+    categoryLabel: '学习与生活',
+    kind: 'journal',
+    tags: ['生活手记', '学习记录'],
+    description: '这是一个生活与学习手记的概念示例：把读到的一句话、学到的一个知识点，以及日常的小发现收集起来。未来可以在这里展示真实文章和笔记。',
+    status: '概念示例 · 尚未发布',
+    url: '',
+  },
+  {
+    id: 'idea-collection',
+    title: '灵感收集站',
+    subtitle: '收集颜色、形状，以及还没长大的想法。',
+    category: 'creative',
+    categoryLabel: '创意探索',
+    kind: 'ideas',
+    tags: ['视觉灵感', '创意练习'],
+    description: '这是一个灵感收藏的概念示例：用色彩、图形和小练习探索新的表达方式。未来可以替换为你的摄影、绘画、设计或其他真实作品。',
+    status: '概念示例 · 尚未发布',
+    url: '',
+  },
+];
