@@ -98,6 +98,7 @@ h2 { font-size: 33px; line-height: 1.5; letter-spacing: -1px; margin: 0 0 12px; 
 .filter:hover { background: #e3e6db; }
 .filter.active { background: var(--green); color: #fff; }
 .project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.project-grid.four-projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .project-card { min-width: 0; }
 .project-open { width: 100%; padding: 0; border: 0; background: none; text-align: left; border-radius: 6px; }
 .project-thumbnail { aspect-ratio: 1.36; border: 1px solid #d7d9cc; border-radius: 6px; position: relative; overflow: hidden; display: grid; place-items: center; transition: transform .3s, box-shadow .3s; }
@@ -291,6 +292,7 @@ dialog::backdrop { background: #18372a80; backdrop-filter: blur(5px); }
 }
 @media (max-width: 560px) {
   .project-grid { grid-template-columns: 1fr; }
+  .project-grid.four-projects { grid-template-columns: 1fr; }
   .project-thumbnail { aspect-ratio: 1.4; }
   .thumbnail-garden { padding: 32px; }
   .mini-browser { max-width: 305px; }

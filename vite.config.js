@@ -7,6 +7,7 @@ export default defineConfig({
       input: {
         home: fileURLToPath(new URL('./index.html', import.meta.url)),
         ledger: fileURLToPath(new URL('./ledger/index.html', import.meta.url)),
+        life: fileURLToPath(new URL('./life/index.html', import.meta.url)),
       },
     },
   },

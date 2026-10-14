@@ -68,6 +68,7 @@ function openProject(project) {
 $('#dialog-link').addEventListener('click', () => projectDialog.close());
 
 const grid = $('#project-grid');
+grid.classList.toggle('four-projects', projects.length === 4);
 projects.forEach((project, index) => {
   const card = document.createElement('article');
   card.className = 'project-card';
