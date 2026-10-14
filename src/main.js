@@ -40,6 +40,7 @@ if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
 }
 
 const thumbnails = {
+  ledger: '<div class="journal-page"><div class="journal-top">LITTLE LEDGER <span>¥</span></div><span class="journal-title">把生活，<br>记清楚。</span><div class="journal-rule"></div><div class="journal-bottom"><span>TRACK / SAVE / GROW<br>每一笔，都值得记录。</span><span class="journal-star">＋</span></div></div><span class="journal-paper"></span>',
   garden: '<div class="mini-browser"><div class="browser-bar"><i></i><i></i><i></i><span>my little space</span></div><div class="mini-site"><div><small>HELLO, WORLD.</small><strong>保持好奇，<br>慢慢生长。</strong><span class="mini-site-button">探索我的世界 ↗</span></div><div class="mini-landscape"><span></span><i></i><b></b></div></div><div class="mini-site-footer">A LITTLE SPACE FOR BIG IDEAS <span>✳</span></div></div>',
   journal: '<div class="journal-page"><div class="journal-top">FIELD NOTES <span>NO. 001</span></div><span class="journal-title">把日常，<br>写成故事。</span><div class="journal-rule"></div><div class="journal-bottom"><span>A FEW LITTLE THINGS<br>WORTH REMEMBERING.</span><span class="journal-star">✳</span></div></div><span class="journal-paper"></span>',
   ideas: '<div class="ideas-sheet"><div class="ideas-top">THE IDEA CLUB <span>↗</span></div><div class="idea-shapes"><span class="shape-flower">✳</span><span class="shape-arch"></span><span class="shape-circle"></span><span class="shape-checker"></span></div><div class="ideas-bottom">好想法，慢慢来。<span>COLLECT / CREATE</span></div></div>',

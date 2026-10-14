@@ -117,7 +117,7 @@ h2 { font-size: 33px; line-height: 1.5; letter-spacing: -1px; margin: 0 0 12px; 
 .mini-landscape b { position: absolute; background: #355744; width: 19px; height: 49px; border-radius: 100% 0 100% 0; bottom: -4px; left: 2px; transform: rotate(-20deg); }
 .mini-site-footer { display: flex; align-items: center; justify-content: space-between; font-size: 4px; letter-spacing: 1px; border-top: 1px solid #e0e0d5; padding: 7px 12px; color: #68735c; }
 .mini-site-footer span { font-size: 12px; }
-.thumbnail-journal { background: #ebdfcc; padding: 23px 46px; }
+.thumbnail-journal, .thumbnail-ledger { background: #ebdfcc; padding: 23px 46px; }
 .journal-page { position: relative; width: 100%; min-height: 100%; z-index: 1; background: #f8f2e5; border: 1px solid #e8d9bd; padding: 19px; transform: rotate(5deg); box-shadow: 3px 6px 10px #997f5620; }
 .journal-top { display: flex; justify-content: space-between; font-size: 6px; letter-spacing: 1px; color: #7e6543; border-bottom: 1px solid #d8c8ad; padding-bottom: 12px; }
 .journal-title { font-family: "Songti SC", "Noto Serif CJK SC", SimSun, serif; display: block; font-size: 27px; line-height: 1.5; color: #6f674d; margin-top: 17px; }
@@ -193,7 +193,7 @@ dialog::backdrop { background: #18372a80; backdrop-filter: blur(5px); }
   .about-values { padding-left: 18px; }
   .project-grid { gap: 18px; }
   .thumbnail-garden { padding: 19px; }
-  .thumbnail-journal { padding: 18px 30px; }
+  .thumbnail-journal, .thumbnail-ledger { padding: 18px 30px; }
   .thumbnail-ideas { padding: 20px; }
   .mini-site { padding: 12px 9px; }
   .mini-landscape { height: 104px; }
@@ -223,7 +223,7 @@ dialog::backdrop { background: #18372a80; backdrop-filter: blur(5px); }
   .filter { padding: 9px 12px; }
   .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 22px; }
   .thumbnail-garden { padding: 30px; }
-  .thumbnail-journal { padding: 22px 46px; }
+  .thumbnail-journal, .thumbnail-ledger { padding: 22px 46px; }
   .thumbnail-ideas { padding: 28px; }
   .journal-title { font-size: 30px; }
   .mini-site { padding: 19px 13px; }
@@ -299,7 +299,7 @@ dialog::backdrop { background: #18372a80; backdrop-filter: blur(5px); }
   .mini-site small { font-size: 6px; }
   .mini-site-button { font-size: 6px; }
   .mini-landscape { height: 132px; }
-  .thumbnail-journal { padding: 27px 56px; }
+  .thumbnail-journal, .thumbnail-ledger { padding: 27px 56px; }
   .journal-page { padding: 18px; max-width: 265px; }
   .journal-title { font-size: 32px; margin-top: 17px; }
   .journal-rule { margin-block: 17px; }
@@ -324,7 +324,7 @@ dialog::backdrop { background: #18372a80; backdrop-filter: blur(5px); }
   .filter { padding-inline: 15px; }
   .thumbnail-garden { padding: 23px; }
   .mini-site strong { font-size: 16px; }
-  .thumbnail-journal { padding: 22px 45px; }
+  .thumbnail-journal, .thumbnail-ledger { padding: 22px 45px; }
   .journal-title { font-size: 26px; }
   .thumbnail-ideas { padding: 22px; }
   .contact-card { padding-inline: 22px; }

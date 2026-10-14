@@ -13,7 +13,7 @@ export const profile = {
   email: '',
 };
 
-// 后两个项目是明确标注的概念示例，可以替换或删除。
+// 最后一个项目是明确标注的概念示例，可以替换或删除。
 // category 可用 website / notes / creative；url 可填真实项目地址。
 export const projects = [
   {
@@ -30,16 +30,17 @@ export const projects = [
     linkLabel: '回到网站首页',
   },
   {
-    id: 'little-notes',
-    title: '日常里的小发现',
-    subtitle: '记录值得记住的、微小而美好的瞬间。',
+    id: 'little-ledger',
+    title: '轻记账',
+    subtitle: '记下每一笔收支，让生活多一点清晰。',
     category: 'notes',
-    categoryLabel: '学习与生活',
-    kind: 'journal',
-    tags: ['生活手记', '学习记录'],
-    description: '这是一个生活与学习手记的概念示例：把读到的一句话、学到的一个知识点，以及日常的小发现收集起来。未来可以在这里展示真实文章和笔记。',
-    status: '概念示例 · 尚未发布',
-    url: '',
+    categoryLabel: '生活工具',
+    kind: 'ledger',
+    tags: ['收支记录', '月度预算', '本地保存'],
+    description: '一个无需登录的个人记账工具，支持收支录入、编辑、删除撤销、月度预算、分类统计和六个月趋势。数据保存在当前浏览器，可导出 JSON 备份和 CSV 明细，也能导入恢复。',
+    status: '可运行工具 · 数据保存在当前浏览器',
+    url: 'ledger/',
+    linkLabel: '打开轻记账',
   },
   {
     id: 'idea-collection',
