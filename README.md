@@ -1,4 +1,4 @@
-# Ran Jin · Westlake University 个人网站
+# Ran Jin · Zhejiang University 个人网站
 
 一个中文个人网站，采用米白、深绿与暖橙配色，包含原创 SVG 插画、个人介绍、作品筛选与详情、GitHub 联系入口和主页链接分享。适配手机、平板和电脑；无需数据库、账号或 API 密钥。
 
@@ -71,7 +71,7 @@ npm run preview
 - `email`：真实邮箱，留空时使用 GitHub；填写后联系按钮会发送邮件。
 - `projects`：作品数组。替换名称、分类、介绍与真实项目地址，也可以删除示例。
 
-当前姓名为 **Ran Jin**，学校为 **Westlake University · 西湖大学**。其余介绍为可编辑的初始文案，不包含虚构的学历、职位或研究成果。“灵感收集站”是明确标注的概念示例；“轻记账”是可运行的生活工具。
+当前姓名为 **Ran Jin**，学校为 **Zhejiang University · 浙江大学**。其余介绍为可编辑的初始文案，不包含虚构的学历、职位或研究成果。“灵感收集站”是明确标注的概念示例；“轻记账”是可运行的生活工具。
 
 页面的静态后备文案在 `index.html`，品牌图标在 `public/favicon.svg`，插画在 `public/artwork.svg`。更改个人姓名后，也可同步更新静态后备文案和图标。
 
@@ -79,7 +79,7 @@ npm run preview
 
 构建后，可以检查以下行为：
 
-1. 个人信息显示 Ran Jin / Westlake University。
+1. 个人信息显示 Ran Jin / Zhejiang University。
 2. “网站”“记录”“创意”筛选分别显示对应作品，“全部”恢复四个作品。
 3. 点选作品可打开详情；关闭按钮和 Escape 可关闭，焦点返回原来的按钮。
 4. “在 GitHub 找到我”打开 GitHub；“复制主页链接”复制不带页内锚点的当前网址。剪贴板不可用时，弹窗提供可手动复制的地址。

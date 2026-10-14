@@ -2,7 +2,7 @@
 // email 留空时显示 GitHub；填入真实邮箱后会显示“发一封邮件”。
 export const profile = {
   name: 'Ran Jin',
-  affiliation: 'Westlake University · 西湖大学',
+  affiliation: 'Zhejiang University · 浙江大学',
   intro: '欢迎来到我的个人空间。\n在这里，分享学习的足迹、探索中的想法与创作。',
   aboutHeading: '喜欢发现，也喜欢创造。',
   about: '我喜欢把遇见的灵感记录下来，把感兴趣的事情动手试一试。这个网站是我的一小块数字花园，收集学习、创作，以及生活里值得记住的片刻。',
