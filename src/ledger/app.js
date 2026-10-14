@@ -97,6 +97,7 @@ function render() {
   $('#add-button').disabled = Boolean(demo || storageProblem);
   $('#budget-button').disabled = Boolean(demo || storageProblem);
   $('#import-trigger').disabled = Boolean(demo);
+  $('#import-file').disabled = Boolean(demo);
   $('#export-json').textContent = demo ? '导出示例 JSON' : '导出 JSON 备份';
   renderCategories(summary);
   renderTrend();
@@ -300,6 +301,7 @@ $('#export-raw').addEventListener('click', () => { try { const raw = window.loca
 $('#import-trigger').addEventListener('click', () => { $('.data-menu').open = false; $('#import-file').click(); });
 $('#import-file').addEventListener('change', async event => {
   const file = event.target.files[0]; event.target.value = ''; if (!file) return;
+  if (demo) return;
   try {
     if (file.size > 4 * 1024 * 1024) throw new Error('备份文件不能超过 4 MB。');
     let content; try { content = JSON.parse(await file.text()); } catch { throw new Error('文件不是有效的 JSON，账本未改变。'); }
@@ -313,6 +315,7 @@ $('#import-file').addEventListener('change', async event => {
 $('#import-form').addEventListener('submit', event => {
   event.preventDefault(); clearError('#import-error');
   try {
+    if (demo) throw new Error('请先退出示例，再导入到自己的账本。');
     const replace = $('input[name="import-mode"]:checked').value === 'replace';
     if (replace) { ledger = replaceLedger(window.localStorage, pendingImport); storageProblem = ''; }
     else persist(state => mergeLedgers(state, pendingImport));
