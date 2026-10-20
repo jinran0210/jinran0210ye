@@ -39,7 +39,7 @@ button:disabled { cursor: not-allowed; opacity: .55; }
 .page-heading { display: flex; justify-content: space-between; gap: 25px; align-items: center; padding-bottom: 31px; border-bottom: 1px solid var(--line); }
 .eyebrow { font-size: 9px; letter-spacing: 2px; font-weight: 550; color: #5c6d51; line-height: 1.6; margin: 0 0 9px; }
 h1 { font-size: 31px; letter-spacing: -.8px; font-weight: 600; line-height: 1.5; margin: 0; }
-h1 > span { color: #c18b5e; margin-left: 5px; }
+h1 > span:last-child { color: #c18b5e; margin-left: 5px; }
 .heading-note { font-size: 12px; color: var(--muted); margin: 9px 0 0; }
 .heading-actions { display: flex; align-items: center; gap: 13px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 22px; min-height: 45px; border-radius: 6px; font-size: 12px; font-weight: 500; border: 1px solid transparent; transition: background .2s, transform .2s; }
@@ -66,6 +66,17 @@ h1 > span { color: #c18b5e; margin-left: 5px; }
 .demo-notice { background: #edf1df; border: 1px solid #dbe3c7; }
 .demo-notice strong { font-weight: 600; }
 .demo-notice p { font-size: 11px; color: #5c6f48; margin-top: 4px; }
+.secret-notice { background: #eeeaf5; border: 1px solid #d9d0e5; color: #594469; }
+.secret-notice p { font-size: 11px; margin-top: 4px; }
+.secret-notice .button { flex-shrink: 0; background: #fffefa; color: #594469; border-color: #d9d0e5; }
+.secret-mode .logo-book { background: #675377; }
+.secret-mode .sidebar-caption { color: #675377; }
+.secret-mode .heading-note { color: #675377; }
+.secret-mode .balance-card { background: #eeeaf5; border-color: #ded4e8; }
+.secret-recovery { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 18px; }
+.secret-replace { display: flex; gap: 10px; align-items: flex-start; font-size: 11px; line-height: 1.8; margin-top: 20px; }
+.secret-replace input { margin-top: 4px; accent-color: var(--green); }
+#secret-dialog .field-label, #import-secret-password-label { display: block; margin-top: 18px; }
 .error-notice { background: #fbede6; border: 1px solid #ecd0bd; color: #8c4935; }
 .error-notice button { flex-shrink: 0; background: #fff6f0; color: #8c4935; border: 1px solid #dbb99e; border-radius: 5px; padding: 12px; }
 .overview-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-block: 27px 20px; }
