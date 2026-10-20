@@ -40,6 +40,7 @@ if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
 }
 
 const thumbnails = {
+  wardrobe: '<div class="journal-page"><div class="journal-top">MY LITTLE WARDROBE <span>୨୧</span></div><span class="journal-title">一份心动，<br>一个裙期。</span><div class="journal-rule"></div><div class="journal-bottom"><span>DEPOSIT / BALANCE / LOVE<br>给期待，留一个日期。</span><span class="journal-star">୨୧</span></div></div><span class="journal-paper"></span>',
   ledger: '<div class="journal-page"><div class="journal-top">LITTLE LEDGER <span>¥</span></div><span class="journal-title">把生活，<br>记清楚。</span><div class="journal-rule"></div><div class="journal-bottom"><span>TRACK / SAVE / GROW<br>每一笔，都值得记录。</span><span class="journal-star">＋</span></div></div><span class="journal-paper"></span>',
   garden: '<div class="mini-browser"><div class="browser-bar"><i></i><i></i><i></i><span>my little space</span></div><div class="mini-site"><div><small>HELLO, WORLD.</small><strong>保持好奇，<br>慢慢生长。</strong><span class="mini-site-button">探索我的世界 ↗</span></div><div class="mini-landscape"><span></span><i></i><b></b></div></div><div class="mini-site-footer">A LITTLE SPACE FOR BIG IDEAS <span>✳</span></div></div>',
   journal: '<div class="journal-page"><div class="journal-top">FIELD NOTES <span>NO. 001</span></div><span class="journal-title">把日常，<br>写成故事。</span><div class="journal-rule"></div><div class="journal-bottom"><span>A FEW LITTLE THINGS<br>WORTH REMEMBERING.</span><span class="journal-star">✳</span></div></div><span class="journal-paper"></span>',
